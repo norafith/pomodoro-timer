@@ -1,0 +1,92 @@
+/* Variables */
+
+:root {
+    --text-color: #edf2f4;
+    --break-bg-color: #2b2d42;
+    --break-button-color: #8d99ae;
+    --working-bg-color: #c70223;
+    --working-button-color: #ef233c;
+}
+
+/* General styles */
+
+* {
+    transition: 0.5s;
+    color: var(--text-color);
+    font-family: "Open Sans";
+}
+
+body {
+    text-align: center;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    border: 1px var(--text-color) solid;
+    font-size: 0.9em;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+main > * {
+    margin-top: 10px; 
+}
+
+.btn-active {
+    transform: scale(0.9);
+}
+
+#timer {
+    font-size: 3.5em;
+}
+
+#author-text {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    font-size: 0.7em;
+}
+
+#author-text > a:hover {
+    font-weight: bold; 
+}
+
+
+/* Styles when working-break phase changes */
+
+.body-working {
+    background-color: var(--working-bg-color);
+}
+
+.body-break {
+    background-color: var(--break-bg-color);
+}
+
+.btn-working {
+    background-color: var(--working-button-color);
+}
+
+.btn-break {
+    background-color: var(--break-button-color);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 300px) {
+    body {
+        font-size: 20px;
+    }
+} 
